@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'MontserratMedium';
+    font-family: 'Montserrat', sans-serif;
     src: url('Montserrat-Medium.ttf');
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'MontserratSemiBold';
+    font-family: 'Montserrat', sans-serif;
     src: url('Montserrat-SemiBold.ttf');
-    font-weight: normal;
+    font-weight: 600;
     font-style: normal;
   }
