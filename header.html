@@ -133,19 +133,23 @@
         });
     </script>
     <script type="text/javascript">
-        
-        function changeImg(temp){
-            var img = document.getElementById("canvasImg");
-            if(temp == "LSEMS")
+       var index = 0; 
+        function changeImg(temp)
+	    {
+	var img = document.getElementById("canvasImg");
+            if(temp == 'LSEMS'){
                 img.src = "images/header.png";
-            else if(temp == "SD")
+                index = 1;
+            }
+            else if(temp == 'SD'){
                 img.src = "images/header1.png";
-            else if(temp == "IB")
-                img.src = "images/IB.png";
-            else if(temp == "GnN")
-                img.src = "images/G&N.png";
-            else if(temp == "TED")
-                img.src = "images/TED.png";
+                index = 2;
+            }
+            else if(temp == 'dep'){
+                img.src = "images/deputychief.png";
+                index = 3;
+	    }
+		    
         }
             
         function drawText() {
@@ -166,11 +170,15 @@
             ctx.fillText($('#inp').val().toUpperCase(), 960, 150);
             ctx.font = "30px Montserrat";
             ctx.fillText($('#inp2').val().toUpperCase(), 960, 200);
+	ctx.font = "40px Montserrat";
+	ctx.textAlign = "center";
+	ctx.fillText($('#inp3').val().toUpperCase(), 960, 0)
         }
 
         $(document).ready(function(){
             $('#inp').on('input', drawText);
-            $('#inp2').on('input', drawText);
+            $('#inp2').on('input', drawText)
+	$('#inp3').on('input', drawText);
             var image = document.getElementById('canvasImg');
             var canvas = document.getElementById('canvas');
             ctx = canvas.getContext('2d');
