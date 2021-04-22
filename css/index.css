@@ -263,7 +263,7 @@ body, html{
     background: #dedede;
     color: black;
     text-transform: uppercase;
-    font-family: MontserratMedium;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.9em;
     text-align: center;
 }
