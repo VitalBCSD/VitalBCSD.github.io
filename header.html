@@ -176,18 +176,19 @@
             ctx.fillText($('#inp').val().toUpperCase(), 960, 150);
             ctx.font = "30px Montserrat";
             ctx.fillText($('#inp2').val().toUpperCase(), 960, 200);
-	ctx.font = "50px Montserrat";
+	ctx.font = "45px Montserrat";
 	ctx.textAlign = "center";
 	ctx.fillText($('#inp3').val().toUpperCase(), 637, 448)
 		ctx.font = "35px Montserrat";
 	ctx.textAlign = "center";
-	ctx.fillText($('#inp4').val().toUpperCase(), 637, 475)
+	ctx.fillText($('#inp4').val().toUpperCase(), 637, 498)
         }
 
         $(document).ready(function(){
             $('#inp').on('input', drawText);
             $('#inp2').on('input', drawText)
 	$('#inp3').on('input', drawText);
+		$('#inp4').on('input', drawText);
             var image = document.getElementById('canvasImg');
             var canvas = document.getElementById('canvas');
             ctx = canvas.getContext('2d');
