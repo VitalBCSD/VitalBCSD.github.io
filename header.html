@@ -104,6 +104,9 @@
                         <input type="text" class="form-control" spellcheck="false" id="inp" >
                         <label for="usr">Line 2:</label>
                         <input type="text" class="form-control" spellcheck="false" id="inp2">
+			<label for="usr">Line 3:</label>
+                        <input type="text" class="form-control" spellcheck="false" id="inp3">
+
 
                     </div>
                 </div>
@@ -172,7 +175,7 @@
             ctx.fillText($('#inp2').val().toUpperCase(), 960, 200);
 	ctx.font = "40px Montserrat";
 	ctx.textAlign = "center";
-	ctx.fillText($('#inp3').val().toUpperCase(), 960, -100)
+	ctx.fillText($('#inp3').val().toUpperCase(), 960, 100)
         }
 
         $(document).ready(function(){
