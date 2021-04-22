@@ -228,8 +228,8 @@ a.article:hover {
     color: black;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.0em;
-    text-align: center;
+    font-size: 1.9em;
+    text-align: left;
 }
 .navUl{
     list-style-type: none;    
