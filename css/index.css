@@ -264,8 +264,8 @@ body, html{
     color: black;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.3em;
-    text-align: center;
+    font-size: 1.9em;
+    text-align: left;
 }
 .canv{
   position: fixed;
