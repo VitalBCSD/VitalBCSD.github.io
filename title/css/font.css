@@ -6,13 +6,6 @@
 }
 
 @font-face {
-    font-family: 'BTBrikRegular';
-    src: url('BTBrikRegular.otf');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-@font-face {
     font-family: 'MontserratMedium';
     src: url('Montserrat-Medium.ttf');
     font-weight: normal;
@@ -23,5 +16,5 @@
     font-family: 'MontserratSemiBold';
     src: url('Montserrat-SemiBold.ttf');
     font-weight: normal;
-    font-style: normal;
-  }
+    font-style: normal
+}
