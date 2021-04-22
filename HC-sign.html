@@ -119,12 +119,7 @@
                     <input type="text" class="form-control" spellcheck="false" id="inp4">
                     <label for="usr">Position:</label>
                     <input type="text" class="form-control" spellcheck="false" id="inp2">
-                    <label for="usr">Department:</label>
-                    <input type="text" class="form-control" spellcheck="false" id="inp3">
-                    <label for="usr">Office:</label>
-                    <input type="text" class="form-control" spellcheck="false" id="inp5">
-                    <label for="usr">Office2:</label>
-                    <input type="text" class="form-control" spellcheck="false" id="inp6">
+               
                 </div>
             </div>
                 
@@ -203,19 +198,19 @@
 		ctx.fillStyle = "gray";
             }
             else if(index == 2){
-                ctx.fillText($('#inp').val().toUpperCase(), 501, 190);
+                ctx.fillText($('#inp').val().toUpperCase(), 400, 190);
             }
             else if(index == 3){
-                ctx.fillText($('#inp').val().toUpperCase(), 501, 190);
+                ctx.fillText($('#inp').val().toUpperCase(), 400, 190);
             }
             else if(index == 4){
-                ctx.fillText($('#inp').val().toUpperCase(), 501, 190);
+                ctx.fillText($('#inp').val().toUpperCase(), 400, 190);
             }
             else if(index == 5){
-                ctx.fillText($('#inp').val().toUpperCase(), 501, 190);
+                ctx.fillText($('#inp').val().toUpperCase(), 400, 190);
             }
             else if(index == 6){
-                ctx.fillText($('#inp').val().toUpperCase(), 501, 190);
+                ctx.fillText($('#inp').val().toUpperCase(), 400, 190);
             }
              if(index != 0){
                 ctx.font = "500 30px Montserrat";
@@ -225,22 +220,14 @@
                 ctx.fillStyle = "#202020";
                 ctx.fillText($('#inp2').val().toUpperCase(), 501, 300);
                 ctx.font = "500 30px Montserrat";
-                ctx.fillText($('#inp3').val().toUpperCase(), 300, 400);
-                  ctx.font = "500 30px Montserrat";
-                ctx.fillText($('#inp5').val().toUpperCase(), 300, 450);       
-                  ctx.font = "500 30px Montserrat";
-                ctx.fillText($('#inp6').val().toUpperCase(), 300, 500); 
-            }
+                           }
         }
         
 
     window.onload = function(){
         $('#inp').on('input', drawText);
         $('#inp2').on('input', drawText);
-        $('#inp3').on('input', drawText);
         $('#inp4').on('input', drawText);
-        $('#inp5').on('input', drawText);
-        $('#inp6').on('input', drawText);
         var image = document.getElementById('canvasImg');
         var canvas = document.getElementById('canvas');
         ctx = canvas.getContext('2d');
