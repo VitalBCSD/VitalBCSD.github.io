@@ -149,12 +149,12 @@
 //            ctx.clearRect(0,0,canvas.width,canvas.height);
             ctx.font = "40px Montserrat";
             ctx.textAlign = "left";
-            ctx.drawImage(img, 0, 25);
+            ctx.drawImage(img, 0,0);
             ctx.fillStyle = "white";
             ctx.shadowOffsetX = 2.5;
             ctx.shadowOffsetY = 2.5;
             ctx.shadowColor = "rgba(0,0,0,1)";
-            ctx.fillText($('#inp').val().toUpperCase(), 25, 75);
+            ctx.fillText($('#inp').val().toUpperCase(), 25, 100);
         }
 
         $(document).ready(function(){
