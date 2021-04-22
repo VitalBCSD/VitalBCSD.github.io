@@ -203,7 +203,7 @@
 		ctx.fillStyle = "gray";
             }
             else if(index == 2){
-                ctx.fillText($('#inp').val().toUpperCase(), 501, 140);
+                ctx.fillText($('#inp').val().toUpperCase(), 501, 190);
             }
             else if(index == 3){
                 ctx.fillText($('#inp').val().toUpperCase(), 501, 190);
@@ -220,14 +220,15 @@
              if(index != 0){
                 ctx.font = "500 30px Montserrat";
                 ctx.fillText($('#inp4').val().toUpperCase(), 1428, 122);
-                ctx.font = "500 28px Montserrat";
+                ctx.font = "500 30px Montserrat";
+		ctx.shadowColor = "rgba(0, 0, 0, 0)";
                 ctx.fillStyle = "#202020";
                 ctx.fillText($('#inp2').val().toUpperCase(), 501, 300);
-                ctx.font = "500 28px Montserrat";
+                ctx.font = "500 30px Montserrat";
                 ctx.fillText($('#inp3').val().toUpperCase(), 300, 400);
-                  ctx.font = "500 28px Montserrat";
+                  ctx.font = "500 30px Montserrat";
                 ctx.fillText($('#inp5').val().toUpperCase(), 300, 450);       
-                  ctx.font = "500 28px Montserrat";
+                  ctx.font = "500 30px Montserrat";
                 ctx.fillText($('#inp6').val().toUpperCase(), 300, 500); 
             }
         }
