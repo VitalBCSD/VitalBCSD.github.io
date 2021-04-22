@@ -1,19 +1,6 @@
 @font-face {
-    font-family: 'BebasNeueRegular';
-    src: url('BebasNeue-Regular.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'BTBrikRegular';
-    src: url('BTBrikRegular.otf');
-    font-weight: normal;
-    font-style: normal;
-  }
-@font-face {
-    font-family: 'MontserratSemiBold';
+    font-family: 'Montserrat', sans-serif;
     src: url('Montserrat-SemiBold.ttf');
-    font-weight: normal;
+    font-weight: 600;
     font-style: normal;
 }
