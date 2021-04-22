@@ -86,24 +86,22 @@
             </div>
             <div class="col-md-2">
                 <div class="btn-group-vertical btn-group-lg bCenter">
-                    <button type="button" class="btn btn-primary" onclick="changeImg('LSEMS');" >BCSD</button>
-                    <button type="button" class="btn btn-primary" onclick="changeImg('');" >N/A</button>
+                    <button type="button" class="btn btn-primary" onclick="changeImg('TITLE');" >BCSD 1</button>
+                    <button type="button" class="btn btn-primary" onclick="changeImg('TITLE1');" >BCSD 2</button>
                 </div>
             </div>
             <div id="header" class="col-md-10">
                 <div class="container-fluid">
                     <canvas id="canvas" class="canv"> </canvas>
-                    <img  id="canvasImg" style="width: 1050px; height: 250px;" src="images/header.png"  alt="">
+                    <img  id="canvasImg" style="width: 1150px; height: 63px;" src="images/title.png"  alt="">
                 </div>
 
                 <div class="container-fluid">
 
                     <div class="form-group entry">
 
-                        <label for="usr">Line 1:</label>
-                        <input type="text" class="form-control" spellcheck="false" id="inp" >
-                        <label for="usr">Line 2:</label>
-                        <input type="text" class="form-control" spellcheck="false" id="inp2">
+                        <label for="usr">Title: </label>
+                    <input type="text" class="form-control" spellcheck="false" id="inp" >
 
                     </div>
                 </div>
@@ -136,16 +134,10 @@
         
         function changeImg(temp){
             var img = document.getElementById("canvasImg");
-            if(temp == "LSEMS")
-                img.src = "images/header.png";
-            else if(temp == "SWAT")
-                img.src = "images/SWAT.png";
-            else if(temp == "IB")
-                img.src = "images/IB.png";
-            else if(temp == "GnN")
-                img.src = "images/G&N.png";
-            else if(temp == "TED")
-                img.src = "images/TED.png";
+            if(temp == "TITLE")
+                img.src = "images/title.png";
+            else if(temp == "TITLE1")
+                img.src = "images/title1.png";
         }
             
         function drawText() {
@@ -154,30 +146,27 @@
             var img = document.getElementById('canvasImg');
             canvas.width = 1920;
             canvas.crossOrigin = "Anonymous";
-            canvas.height = 500;
+            canvas.height = 63;
 //            ctx.clearRect(0,0,canvas.width,canvas.height);
             ctx.font = "40px Montserrat";
-            ctx.textAlign = "center";
+            ctx.textAlign = "left";
             ctx.drawImage(img, 0, 0);
             ctx.fillStyle = "white";
             ctx.shadowOffsetX = 2.5;
             ctx.shadowOffsetY = 2.5;
             ctx.shadowColor = "rgba(0,0,0,1)";
-            ctx.fillText($('#inp').val().toUpperCase(), 960, 150);
-            ctx.font = "30px Montserrat";
-            ctx.fillText($('#inp2').val().toUpperCase(), 960, 200);
+            ctx.fillText($('#inp').val().toUpperCase(), 25, 50);            
         }
 
         $(document).ready(function(){
             $('#inp').on('input', drawText);
-            $('#inp2').on('input', drawText);
             var image = document.getElementById('canvasImg');
             var canvas = document.getElementById('canvas');
             ctx = canvas.getContext('2d');
             image.onload = function(){
                 canvas.width = 1920;
                 canvas.crossOrigin = "Anonymous";
-                canvas.height = 500;
+                canvas.height = 63;
                 ctx.drawImage(image, 0, 0);
                 drawText();
             }
