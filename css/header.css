@@ -227,7 +227,7 @@ a.article:hover {
     background: #dedede;
     color: black;
     text-transform: uppercase;
-    font-family: MontserratMedium;
+    font-family: font-family: 'Montserrat', sans-serif;
     font-size: 1.9em;
     text-align: center;
 }
