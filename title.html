@@ -86,7 +86,7 @@
                 </div>
             </nav>
             </div>
-		<div class="col-md-4">
+		<div class="col-md-2">
                 <div class="btn-group-vertical btn-group-lg bCenter">
                        <li>
                             <button type="button" class="btn btn-primary" style="width: 100%;margin-top: 5px;" onclick="changeImg('title');">BCSD 1</button>
@@ -135,19 +135,14 @@
         });
     </script>
      <script type="text/javascript">
-        var index = 0;
-        function changeImg(temp)
-        {
+       
+	     function changeImg(temp){
             var img = document.getElementById("canvasImg");
-            if(temp == 'title'){
+            if(temp == "TITLE")
                 img.src = "images/title.png";
-                index = 1;
-            }
-            else if(temp == 'title1'){
+            if(temp == "TITLE1")
                 img.src = "images/title1.png";
-                index = 2;
-            }            
-        }
+	     }
         
 	     function drawText() {
             var canvas = document.getElementById('canvas');
