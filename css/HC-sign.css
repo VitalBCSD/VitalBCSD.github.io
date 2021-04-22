@@ -233,7 +233,7 @@ a.article:hover {
     background: #dedede;
     color: black;
     text-transform: uppercase;
-    font-family: BebasNeueRegular;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2.1em;
 }
 .navUl{
