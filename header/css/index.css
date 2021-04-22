@@ -47,9 +47,9 @@ body, html{
     background: #dedede;
     color: black;
     text-transform: uppercase;
-    font-family: BTBrikRegular;
-    font-size: 1.9em;
-    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3em;
+    text-align: left;
 }
 .canv{
   position: fixed;
