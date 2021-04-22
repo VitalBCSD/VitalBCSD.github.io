@@ -88,8 +88,8 @@
             </div>
 		<div class="col-md-2">
                 <div class="btn-group-vertical btn-group-lg bCenter">
-                    <button type="button" class="btn btn-primary" onclick="changeImg('LSEMS');" >BCSD</button>
-                    <button type="button" class="btn btn-primary" onclick="changeImg('SWAT');" >N/A</button>
+                    <button type="button" class="btn btn-primary" onclick="changeImg('TITLE');" >BCSD 1</button>
+                    <button type="button" class="btn btn-primary" onclick="changeImg('TITLE1');" >BCSD 2</button>
            </div>
 		</div>
             <div class="container">
@@ -130,8 +130,17 @@
             $('#sidebar').toggleClass('active');
         });
     </script>
-    <script>
-        function drawText() {
+     <script type="text/javascript">
+        
+        function changeImg(temp){
+            var img = document.getElementById("canvasImg");
+            if(temp == "TITLE")
+                img.src = "images/title.png";
+            else if(temp == "TITLE1")
+                img.src = "images/title1.png"	
+	}
+        
+	     function drawText() {
             var canvas = document.getElementById('canvas');
             ctx = canvas.getContext('2d');
             var img = document.getElementById('canvasImg');
