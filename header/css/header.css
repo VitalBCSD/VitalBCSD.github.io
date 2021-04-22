@@ -229,7 +229,7 @@ a.article:hover {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-size: 2.3em;
-    text-align: left;
+    text-align: center;
 }
 .navUl{
     list-style-type: none;    
