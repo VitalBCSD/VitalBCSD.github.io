@@ -137,24 +137,21 @@
             drawText();
             $('#sidebar').toggleClass('active');
         });
-<script type="text/javascript">
-	var index = 0; 
-        function changeImg(temp)
-	    {
-	var img = document.getElementById("canvasImg");
-            if(temp == 'LSEMS'){
+	</script>
+	 <script type="text/javascript">
+        
+        function changeImg(temp){
+            var img = document.getElementById("canvasImg");
+            if(temp == "LSEMS")
                 img.src = "images/header.png";
-                index = 1;
-            }
-            else if(temp == 'SD'){
+            else if(temp == "SD")
                 img.src = "images/header1.png";
-                index = 2;
-            }
-            else if(temp == 'dep'){
-                img.src = "images/deputychief.png";
-                index = 3;
-	    }
-		    
+            else if(temp == "IB")
+                img.src = "images/IB.png";
+            else if(temp == "GnN")
+                img.src = "images/G&N.png";
+            else if(temp == "TED")
+                img.src = "images/TED.png";
         }
             
         function drawText() {
