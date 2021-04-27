@@ -86,7 +86,7 @@
                 </div>
             </nav>
             </div>
-		<div class="col-md-10">
+		<div class="col-md-2">
                 <div class="btn-group-vertical btn-group-lg bCenter">
                     <button type="button" class="btn btn-primary" onclick="changeImg('TITLE');" >BCSD 1</button>
                     <button type="button" class="btn btn-primary" onclick="changeImg('TITLE1');" >BCSD 2</button>
@@ -159,6 +159,16 @@
 
         $(document).ready(function(){
             $('#inp').on('input', drawText);
+        var image = document.getElementById('canvasImg');
+            var canvas = document.getElementById('canvas');
+            ctx = canvas.getContext('2d');
+            image.onload = function(){
+                canvas.width = 1920;
+                canvas.crossOrigin = "Anonymous";
+                canvas.height = 63;
+                ctx.drawImage(image, 0, 0);
+                drawText();
+            }
         });
         
     </script>
