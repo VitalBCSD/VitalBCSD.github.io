@@ -102,7 +102,7 @@
                             <button type="button" class="btn btn-primary" style="width: 100%;margin-top: 5px;" onclick="changeImg('under');">Undersheriff</button>
                         </li>
                         <li>
-                            <button type="button" class="btn btn-danger" style="width: 100%;margin-top: 5px;" onclick="changeImg('dep');">Deputy Chief</button>
+                            <button type="button" class="btn btn-danger" style="width: 100%;margin-top: 5px;" onclick="changeImg('assist');">Assistant Sheriff</button>
                         </li>
                         <li>
                             <button type="button" class="btn btn-primary" style="width: 100%;margin-top: 5px;" onclick="changeImg('comm');">Commander</button>
@@ -153,8 +153,8 @@
                 img.src = "images/undersheriff.png";
                 index = 2;
             }
-            else if(temp == 'dep'){
-                img.src = "images/deputychief.png";
+            else if(temp == 'assist'){
+                img.src = "images/assistantsheriff.png";
                 index = 3;
             }
             else if(temp == 'comm'){
@@ -199,10 +199,12 @@
 		ctx.fillStyle = "gray";               
             }
             else if(index == 3){
-                ctx.fillText($('#inp').val().toUpperCase(), 400, 190);
+                ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
+		ctx.fillStyle = "gray";
             }
             else if(index == 4){
-                ctx.fillText($('#inp').val().toUpperCase(), 400, 190);
+                ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
+		ctx.fillStyle = "gray";
             }
             else if(index == 5){
                 ctx.fillText($('#inp').val().toUpperCase(), 400, 190);
