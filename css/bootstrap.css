@@ -11,7 +11,7 @@
   --pink: #e83e8c;
   --red: #dc3545;
   --orange: #fd7e14;
-  --yellow: #ffc107;
+  --yellow: #CDAB67;
   --green: #28a745;
   --teal: #20c997;
   --cyan: #17a2b8;
@@ -2563,7 +2563,7 @@ fieldset:disabled a.btn {
 
 .btn-warning:hover {
   color: #212529;
-  background-color: #e0a800;
+  background-color: #CDAB67;
   border-color: #d39e00;
 }
 
@@ -2573,14 +2573,14 @@ fieldset:disabled a.btn {
 
 .btn-warning.disabled, .btn-warning:disabled {
   color: #212529;
-  background-color: #ffc107;
-  border-color: #ffc107;
+  background-color: #CDAB67;
+  border-color: #CDAB67;
 }
 
 .btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active,
 .show > .btn-warning.dropdown-toggle {
   color: #212529;
-  background-color: #d39e00;
+  background-color: #CDAB67;
   border-color: #c69500;
 }
 
