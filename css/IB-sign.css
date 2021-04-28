@@ -234,8 +234,8 @@ a.article:hover {
     background: #dedede;
     color: black;
     text-transform: uppercase;
-    font-family: BebasNeueRegular;
-    font-size: 2.1em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
 }
 .navUl{
     list-style-type: none;    
