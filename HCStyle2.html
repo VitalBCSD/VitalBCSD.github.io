@@ -94,10 +94,10 @@
                     </button>
                     <ul class="dropdown-menu" style="background: black">
                         <li>
-                            <button type="button" class="btn btn-warning" style="width: 100%;" onclick="changeImg('chief');">Division Chief</button>
+                            <button type="button" class="btn btn-warning" style="width: 100%;" onclick="changeImg('cdchief');">Division Chief</button>
                         </li>                      
                         <li>
-                            <button type="button" class="btn btn-primary" style="width: 100%;margin-top: 5px;" onclick="changeImg('comm');">Commander</button>
+                            <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('cdcomm');">Commander</button>
                         </li>
                     </ul>
                 </div>
@@ -136,8 +136,8 @@
         function changeImg(temp)
         {
             var img = document.getElementById("canvasImg");
-            if(temp == 'chief'){
-                img.src = "images/chief2.png";
+            if(temp == 'cdchief'){
+                img.src = "images/divisionchief.png";
                 index = 1;
             }
             else if(temp == 'assist'){
@@ -148,7 +148,7 @@
                 img.src = "images/deputychief2.png";
                 index = 3;
             }
-            else if(temp == 'comm'){
+            else if(temp == 'cdcomm'){
                 img.src = "images/cdcommander.png";
                 index = 4;
             }
