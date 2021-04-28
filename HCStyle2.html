@@ -11,7 +11,8 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/HC-sign.css">
-    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="js/jquery.js">
     <link rel="stylesheet" media="screen" href="css/font.css" type="text/css"/>
     
@@ -140,21 +141,12 @@
                 img.src = "images/divisionchief.png";
                 index = 1;
             }
-            else if(temp == 'assist'){
-                img.src = "images/assistantchief2.png";
-                index = 2;
-            }
-            else if(temp == 'dep'){
-                img.src = "images/deputychief2.png";
-                index = 3;
-            }
             else if(temp == 'cdcomm'){
                 img.src = "images/cdcommander.png";
-                index = 4;
+                index = 2;
             }
 
-        }
-        
+        }       
         function drawText(){
             var canvas = document.getElementById('canvas');
             ctx = canvas.getContext('2d');
@@ -188,21 +180,6 @@
             else if(index == 2){
 		ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
 		ctx.fillStyle = "gray";               
-            }
-            else if(index == 3){
-                ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
-		ctx.fillStyle = "gray";
-            }
-            else if(index == 4){
-                ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
-		ctx.fillStyle = "gray";
-            }
-            else if(index == 5){
-                ctx.fillText($('#inp').val().toUpperCase(), 400, 190);
-            }
-            else if(index == 6){
-                ctx.fillText($('#inp').val().toUpperCase(), 400, 190);
-            }
              if(index != 0){
                 ctx.font = "500 30px Montserrat";
                 ctx.fillText($('#inp4').val().toUpperCase(), 1428, 122);
