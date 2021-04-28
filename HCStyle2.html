@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
     
-	<title>Vital LSPD</title>
+	<title>Vital BCSD</title>
 	<link rel="icon" href="images/favicon.png" type="image">
 	<link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
@@ -31,7 +31,7 @@
         <nav id="sidebar">
             <div class="sidebar-header">
                 <a href="index.html"><img src="images/lsems.png" style="width: 50px; height: 50px;" alt=""></a>
-                <h3>Los Santos Police Department</h3>
+                <h3>Blaine County Sheriff's Department</h3>
             </div>
 
             <ul class="list-unstyled components">
@@ -45,13 +45,13 @@
                             <a href="HC-sign.html">High Command</a>
                         </li>
                         <li>
-                            <a href="PC-sign.html">Police Command</a>
+                            <a href="PC-sign.html">Sheriff Command</a>
                         </li>
                         <li>
-                            <a href="PO-sign.html">Police Officer</a>
+                            <a href="PO-sign.html">Deputy</a>
                         </li>
                          <li>
-                            <a href="IB-sign.html">Investigation Buraue</a>
+                            <a href="IB-sign.html">Correction's Division</a>
                         </li>
                     </ul>
                 </li>
@@ -63,8 +63,7 @@
                 </li>
             </ul>
                <div class="credits">
-                  <p>Credits: Stax#0276</p>
-                  <p>Credits: CaS#6976</p>
+                  <p>Credits: Jeremy.#7777</p>                
               </div>
                 
         </nav>
@@ -78,7 +77,7 @@
                         <li><button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
                             <i class="fas fa-align-left"></i>
                         </button></li>
-                        <li><h3>High Command</h3></li>
+                        <li><h3>Correction's Division High Command</h3></li>
                     </ul>
                 </div>
             </nav>
@@ -95,14 +94,8 @@
                     </button>
                     <ul class="dropdown-menu" style="background: black">
                         <li>
-                            <button type="button" class="btn btn-danger" style="width: 100%;" onclick="changeImg('chief');">Chief</button>
-                        </li>
-                        <li>
-                            <button type="button" class="btn btn-primary" style="width: 100%;margin-top: 5px;" onclick="changeImg('assist');">Assistant Chief</button>
-                        </li>
-                        <li>
-                            <button type="button" class="btn btn-danger" style="width: 100%;margin-top: 5px;" onclick="changeImg('dep');">Deputy Chief</button>
-                        </li>
+                            <button type="button" class="btn btn-warning" style="width: 100%;" onclick="changeImg('chief');">Division Chief</button>
+                        </li>                      
                         <li>
                             <button type="button" class="btn btn-primary" style="width: 100%;margin-top: 5px;" onclick="changeImg('comm');">Commander</button>
                         </li>
@@ -114,13 +107,7 @@
                     <label for="usr">Badge Number:</label>
                     <input type="text" class="form-control" spellcheck="false" id="inp4">
                     <label for="usr">Position:</label>
-                    <input type="text" class="form-control" spellcheck="false" id="inp2">
-                    <label for="usr">Department:</label>
-                    <input type="text" class="form-control" spellcheck="false" id="inp3">
-                    <label for="usr">Office:</label>
-                    <input type="text" class="form-control" spellcheck="false" id="inp5">
-                    <label for="usr">Office2:</label>
-                    <input type="text" class="form-control" spellcheck="false" id="inp6">
+                    <input type="text" class="form-control" spellcheck="false" id="inp2">                 
                 </div>
             </div>
                 
@@ -162,7 +149,7 @@
                 index = 3;
             }
             else if(temp == 'comm'){
-                img.src = "images/commander2.png";
+                img.src = "images/cdcommander.png";
                 index = 4;
             }
 
@@ -176,18 +163,18 @@
             canvas.crossOrigin = "Anonymous";
             canvas.height = 510;
 //            ctx.clearRect(0,0,canvas.width,canvas.height);
-            ctx.font = "73px BebasNeueRegular";
+            ctx.font = "500 28px Montserrat";
             ctx.textAlign = "left";
 
             ctx.drawImage(img, 0, 0);
-            ctx.font = "35px BebasNeueRegular";
+            ctx.font = "500 30px Montserrat";
             ctx.textAlign = "left";
             ctx.fillStyle = "grey";
             ctx.shadowOffsetX = 0;
             ctx.shadowOffsetY = 4;
             ctx.shadowColor = "rgba(0, 0, 0, 1)";
-            ctx.fillText("Badge No:", 1185, 100);
-            ctx.font = "60px BebasNeueRegular";
+            ctx.fillText("Badge #:", 1288, 122);
+            ctx.font = "700 50px Montserrat";
             ctx.textAlign = "left";
             ctx.fillStyle = "white";
             ctx.shadowOffsetX = 0;
@@ -195,51 +182,43 @@
             ctx.shadowColor = "rgba(0, 0, 0, 1)";
             
             if(index == 1){
-                ctx.fillText($('#inp').val().toUpperCase(), 750, 125);
-                ctx.fillText("Chief", 550, 125);
+                ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
+		ctx.fillStyle = "gray";
             }
             else if(index == 2){
-                ctx.fillText($('#inp').val().toUpperCase(), 825, 125);
-                ctx.fillText("Asst. Chief", 550, 125);
+		ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
+		ctx.fillStyle = "gray";               
             }
             else if(index == 3){
-                ctx.fillText($('#inp').val().toUpperCase(), 800, 125);
-                ctx.fillText("DPT Chief", 550, 125);
+                ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
+		ctx.fillStyle = "gray";
             }
             else if(index == 4){
-                ctx.fillText($('#inp').val().toUpperCase(), 725, 125);
-                ctx.fillText("CMD", 550, 125);
+                ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
+		ctx.fillStyle = "gray";
             }
             else if(index == 5){
-                ctx.fillText($('#inp').val().toUpperCase(), 750, 125);
-                ctx.fillText("PO3+1", 550, 125);
+                ctx.fillText($('#inp').val().toUpperCase(), 400, 190);
             }
             else if(index == 6){
-                ctx.fillText($('#inp').val().toUpperCase(), 750, 125);
+                ctx.fillText($('#inp').val().toUpperCase(), 400, 190);
             }
-            if(index != 0){
-                ctx.font = "35px BebasNeueRegular";
-                ctx.fillText($('#inp4').val().toUpperCase(), 1300, 100);
-                ctx.font = "50px BebasNeueRegular";
-                ctx.fillStyle = "white";
-                ctx.fillText($('#inp2').val().toUpperCase(), 400, 200);
-                ctx.font = "50px BebasNeueRegular";
-                ctx.fillText($('#inp3').val().toUpperCase(), 400, 250);
-                  ctx.font = "50px BebasNeueRegular";
-                ctx.fillText($('#inp5').val().toUpperCase(), 400, 300);       
-                  ctx.font = "50px BebasNeueRegular";
-                ctx.fillText($('#inp6').val().toUpperCase(), 400, 350); 
-            }
+             if(index != 0){
+                ctx.font = "500 30px Montserrat";
+                ctx.fillText($('#inp4').val().toUpperCase(), 1428, 122);
+                ctx.font = "500 30px Montserrat";
+		ctx.shadowColor = "rgba(0, 0, 0, 0)";
+                ctx.fillStyle = "#202020";
+                ctx.fillText($('#inp2').val().toUpperCase(), 501, 300);
+                ctx.font = "500 30px Montserrat";
+                           }
         }
         
 
     window.onload = function(){
         $('#inp').on('input', drawText);
         $('#inp2').on('input', drawText);
-        $('#inp3').on('input', drawText);
         $('#inp4').on('input', drawText);
-        $('#inp5').on('input', drawText);
-        $('#inp6').on('input', drawText);
         var image = document.getElementById('canvasImg');
         var canvas = document.getElementById('canvas');
         ctx = canvas.getContext('2d');
@@ -250,6 +229,8 @@
 //            ctx.clearRect(0,0,canvas.width,canvas.height);
             ctx.drawImage(image, 0, 0);
             drawText();
+        }
+    }
         }
     }
 
