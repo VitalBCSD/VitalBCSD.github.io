@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(270deg, #2167c8, #3f3f3f, #c81b4f);
+    background: linear-gradient(270deg, #CDAB67, #232323, #CDAB67);
     background-size: 600% 600%;
     color: white;
     margin: 1px;
@@ -235,7 +235,7 @@ a.article:hover {
     color: black;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.9em;
+    font-size: 1.3em;
 }
 .navUl{
     list-style-type: none;    
