@@ -206,7 +206,7 @@ a.article:hover {
 /*    float: lef;*/
     width: 100%;
     margin-top: 80px;
-    text-align: center;
+    text-align: left;
 }
 .entry label{
     color: #135c81;
