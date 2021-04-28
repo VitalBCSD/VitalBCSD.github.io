@@ -137,11 +137,11 @@
         function changeImg(temp)
         {
             var img = document.getElementById("canvasImg");
-            if(temp == 'cdchief'){
+            if(temp == 'divisionchief'){
                 img.src = "images/divisionchief.png";
                 index = 1;
             }
-            else if(temp == 'cdcomm'){
+            else if(temp == 'comm'){
                 img.src = "images/cdcommander.png";
                 index = 2;
             }
@@ -179,7 +179,8 @@
             }
             else if(index == 2){
 		ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
-		ctx.fillStyle = "gray";               
+		ctx.fillStyle = "gray";  
+	    }
              if(index != 0){
                 ctx.font = "500 30px Montserrat";
                 ctx.fillText($('#inp4').val().toUpperCase(), 1428, 122);
