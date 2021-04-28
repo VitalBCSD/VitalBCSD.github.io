@@ -217,7 +217,7 @@ a.article:hover {
     margin-top: 12px;
 }
 body, html{
-    background: linear-gradient(270deg, #2167c8, #3f3f3f, #c81b4f);
+    background: linear-gradient(270deg, #CDAB67, #232323, #CDAB67);
     background-size: 600% 600%;
     color: white;
     animation: gradientslide 5s ease infinite;
