@@ -188,6 +188,15 @@ a.article:hover {
     }
 }
 
+.credits{
+    text-align: center;
+    text-decoration: underline;
+    margin: 20% 30px 0;
+    padding: 10px;
+    font-family: 'Yellowtail', cursive;
+    font-size: 1.7em;
+}
+
 .canv{
 /*    margin-top: 30px;*/
 /*    text-align: center;*/
