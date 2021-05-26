@@ -213,7 +213,7 @@ a.article:hover {
 }
 .entry{
 /*    float: lef;*/
-    width: 100%;
+    width: 1150px;
     margin-top: 40px;
     text-align: left;
 }
