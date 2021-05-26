@@ -104,9 +104,9 @@
 
                     <div class="form-group entry">
 			<label for="usr">Line 1:</label>
-                        <input type="text" class="form-control" spellcheck="false" id="inp3">
+                        <input type="text" class="form-control" spellcheck="false" id="inp">
 			    <label for="usr">Line 2:</label>
-                        <input type="text" class="form-control" spellcheck="false" id="inp4">
+                        <input type="text" class="form-control" spellcheck="false" id="inp2">
 
 
 
@@ -166,16 +166,11 @@
             ctx.shadowOffsetX = 2.5;
             ctx.shadowOffsetY = 2.5;
             ctx.shadowColor = "rgba(0,0,0,1)";
-            ctx.fillText($('#inp').val().toUpperCase(), 960, 150);
-            ctx.font = "30px Montserrat";
-            ctx.fillText($('#inp2').val().toUpperCase(), 960, 200);
-	ctx.font = "45px Montserrat";
-	ctx.textAlign = "center";
-	ctx.fillText($('#inp3').val().toUpperCase(), 637, 448)
-		ctx.font = "35px Montserrat";
-	ctx.textAlign = "center";
-	ctx.fillText($('#inp4').val().toUpperCase(), 637, 498)
-        }
+            ctx.fillText($('#inp').val().toUpperCase(), 637, 448);
+            ctx.font = "35px Montserrat";
+            ctx.fillText($('#inp2').val().toUpperCase(), 637, 498);
+	ctx.font = "40px Montserrat";
+	}
 
         $(document).ready(function(){
             $('#inp').on('input', drawText);
