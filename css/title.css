@@ -214,7 +214,7 @@ a.article:hover {
 .entry{
 /*    float: lef;*/
     width: 100%;
-    margin-top: 80px;
+    margin-top: 40px;
     text-align: left;
 }
 .entry label{
