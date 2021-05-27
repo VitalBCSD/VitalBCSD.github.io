@@ -90,35 +90,43 @@
                         <li><h3>Header Generator</h3></li>
                     </ul>
                     
+<!-- Page Content  -->
+        <div id="content">
+           <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                   <ul class="navUl">
+                        <li><button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="fas fa-align-left"></i>
+                        </button></li>
+                        <li><h3>Header Generator</h3></li>
+                    </ul>
+                    
                 </div>
-             <div class="container">
-                 <canvas id="canvas" class="canv"> </canvas>
             </nav>
-              <div class="container">
-                  <canvas id="canvas" class="canv"> </canvas>
-                 <img  id="canvasImg" style="width: 1050px;height: 250px;" src="images/header.png"  alt="">
-             </div>
-             <div class="col-md-2">
-                 <div class="btn-group-vertical btn-group-lg bCenter">
-                 <button type="button" class="btn btn-primary" onclick="changeImg('LSEMS');" >BCSD</button>
- 		<button type="button" class="btn btn-primary" onclick="changeImg('BCSD');" >Correction's</button>
- 			<button type="button" class="btn btn-primary" onclick="changeImg('SERT');" >SERT</button>
-                 </div>
-             </div>
-             <div id="header" class="col-md-10">
-                 <div class="container-fluid">
-                     <canvas id="canvas" class="canv"> </canvas>
-                     <img  id="canvasImg" style="width: 1050px; height: 250px;" src="images/header.png"  alt="">
+            </div>
+            <div class="col-md-2">
+                <div class="btn-group-vertical btn-group-lg bCenter">
+		<button type="button" class="btn btn-primary" onclick="changeImg('LSEMS');" >BCSD</button>
+		<button type="button" class="btn btn-primary" onclick="changeImg('BCSD');" >Correction's</button>
+			<button type="button" class="btn btn-primary" onclick="changeImg('SERT');" >SERT</button>
+                </div>
+            </div>
+            <div id="header" class="col-md-10">
+                <div class="container-fluid">
+                    <canvas id="canvas" class="canv"> </canvas>
+                    <img  id="canvasImg" style="width: 1050px; height: 250px;" src="images/header.png"  alt="">
                 </div>
 
                 <div class="container-fluid">
 
                     <div class="form-group entry">
-
-                        <label for="usr">Line 1:</label>
-                        <input type="text" class="form-control" spellcheck="false" id="inp" >
-                        <label for="usr">Line 2:</label>
+			<label for="usr">Line 1:</label>
+                        <input type="text" class="form-control" spellcheck="false" id="inp">
+			    <label for="usr">Line 2:</label>
                         <input type="text" class="form-control" spellcheck="false" id="inp2">
+
+
 
                     </div>
                 </div>
