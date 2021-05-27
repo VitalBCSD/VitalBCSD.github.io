@@ -12,7 +12,7 @@
     <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/HC-sign.css">
    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="js/jquery.js">
     <link rel="stylesheet" media="screen" href="css/font.css" type="text/css"/>
@@ -179,39 +179,29 @@
             canvas.crossOrigin = "Anonymous";
             canvas.height = 500;
 //            ctx.clearRect(0,0,canvas.width,canvas.height);
-            ctx.font = "500 28px Montserrat";
-            ctx.textAlign = "left";
-
+            ctx.font = "600 40px Montserrat";
+            ctx.textAlign = "center";
             ctx.drawImage(img, 0, 0);
-            ctx.font = "500 30px Montserrat";
-            ctx.textAlign = "left";
-            ctx.fillStyle = "grey";
-            ctx.shadowOffsetX = 0;
-            ctx.shadowOffsetY = 4;
-            ctx.shadowColor = "rgba(0, 0, 0, 1)";
-            ctx.fillText("Badge #:", 1288, 122);
-            ctx.font = "700 50px Montserrat";
-            ctx.textAlign = "left";
-            ctx.fillStyle = "white";
-            ctx.shadowOffsetX = 0;
-            ctx.shadowOffsetY = 4;
+            ctx.fillstyle = "white"
+	    ctx.shadowOffsetX = 2.5;
+            ctx.shadowOffsetY = 2.5;
             ctx.shadowColor = "rgba(0, 0, 0, 1)";
             
             if(index == 1){
-                ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
-		ctx.fillStyle = "gray";
+                ctx.fillText($('#inp').val().toUpperCase(), 960, 150);
+		ctx.fillStyle = "white";
             }
             else if(index == 2){
-		ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
-		ctx.fillStyle = "gray";               
+		ctx.fillText($('#inp').val().toUpperCase(), 960, 150);
+		ctx.fillStyle = "white";               
             }
             else if(index == 3){
-                ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
-		ctx.fillStyle = "gray";
+                ctx.fillText($('#inp').val().toUpperCase(), 960, 150);
+		ctx.fillStyle = "white";
             }
             else if(index == 4){
-                ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
-		ctx.fillStyle = "gray";
+                ctx.fillText($('#inp').val().toUpperCase(), 960, 150);
+		ctx.fillStyle = "white";
             }
             else if(index == 5){
                 ctx.fillText($('#inp').val().toUpperCase(), 400, 190);
@@ -222,19 +212,19 @@
              if(index != 0){
                 ctx.font = "500 30px Montserrat";
                 ctx.fillText($('#inp4').val().toUpperCase(), 1428, 122);
-                ctx.font = "500 30px Montserrat";
+                ctx.font = "600 30px Montserrat";
 		ctx.shadowColor = "rgba(0, 0, 0, 0)";
-                ctx.fillStyle = "#202020";
-                ctx.fillText($('#inp2').val().toUpperCase(), 501, 300);
-                ctx.font = "500 30px Montserrat";
+                ctx.fillStyle = "white";
+                ctx.fillText($('#inp2').val().toUpperCase(), 960, 200);
                            }
         }
         
 
     window.onload = function(){
-        $('#inp').on('input', drawText);
-        $('#inp2').on('input', drawText);
-        $('#inp4').on('input', drawText);
+         $('#inp').on('input', drawText);
+            $('#inp2').on('input', drawText)
+	$('#inp3').on('input', drawText);
+		$('#inp4').on('input', drawText);
         var image = document.getElementById('canvasImg');
         var canvas = document.getElementById('canvas');
         ctx = canvas.getContext('2d');
