@@ -93,7 +93,7 @@
             </div>
             <div class="container">
                  <canvas id="canvas" class="canv"> </canvas>
-                <img  id="canvasImg" style="width: 1050px;height: 250px;" src="images/org.png"  alt="">
+                <img  id="canvasImg" style="width: 1050px;height: 250px;" src="images/header.png"  alt="">
             </div>
             
             <div class="container">
@@ -116,14 +116,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="container-fluid">
+              <div class="container-fluid">
 
                     <div class="form-group entry">
 			<label for="usr">Line 1:</label>
                         <input type="text" class="form-control" spellcheck="false" id="inp">
 			    <label for="usr">Line 2:</label>
                         <input type="text" class="form-control" spellcheck="false" id="inp2">
-               
+			    
                 </div>
             </div>
                 
@@ -148,61 +148,106 @@
         });
     </script>
     <script type="text/javascript">
-       
- function changeImg(temp){
+        var index = 0;
+        function changeImg(temp)
+        {
             var img = document.getElementById("canvasImg");
-            if(temp == "LSEMS")
+            if(temp == 'chief'){
                 img.src = "images/header.png";
-            else if(temp == "SD")
-                img.src = "images/header1.png";
-       	      else if(temp == "SERT")
+                index = 1;
+            }
+            else if(temp == 'under'){
                 img.src = "images/sert.png";
-		else if(temp == "BCSD")
-                img.src = "images/header3.png";
+                index = 2;
+            }
+            else if(temp == 'assist'){
+                img.src = "images/assistantsheriff.png";
+                index = 3;
+            }
+            else if(temp == 'comm'){
+                img.src = "images/commander.png";
+                index = 4;
+            }
+
         }
         
-        function drawText() {
+        function drawText(){
             var canvas = document.getElementById('canvas');
             ctx = canvas.getContext('2d');
-            var img = document.getElementById('canvasImg');
+            var img = document.getElementById("canvasImg");
             canvas.width = 1920;
             canvas.crossOrigin = "Anonymous";
             canvas.height = 500;
 //            ctx.clearRect(0,0,canvas.width,canvas.height);
-            ctx.font = "40px Montserrat";
-            ctx.textAlign = "center";
-            ctx.drawImage(img, 0, 0);
-            ctx.fillStyle = "white";
-            ctx.shadowOffsetX = 2.5;
-            ctx.shadowOffsetY = 2.5;
-            ctx.shadowColor = "rgba(0,0,0,1)";
-            ctx.fillText($('#inp').val().toUpperCase(), 960, 150);
-            ctx.font = "30px Montserrat";
-            ctx.fillText($('#inp2').val().toUpperCase(), 960, 200);
-	ctx.font = "45px Montserrat";
-	ctx.textAlign = "center";
-	ctx.fillText($('#inp3').val().toUpperCase(), 637, 448)
-		ctx.font = "35px Montserrat";
-	ctx.textAlign = "center";
-	ctx.fillText($('#inp4').val().toUpperCase(), 637, 498)
-        }
+            ctx.font = "500 28px Montserrat";
+            ctx.textAlign = "left";
 
-        $(document).ready(function(){
-            $('#inp').on('input', drawText);
-            $('#inp2').on('input', drawText)
-	$('#inp3').on('input', drawText);
-		$('#inp4').on('input', drawText);
-            var image = document.getElementById('canvasImg');
-            var canvas = document.getElementById('canvas');
-            ctx = canvas.getContext('2d');
-            image.onload = function(){
-                canvas.width = 1920;
-                canvas.crossOrigin = "Anonymous";
-                canvas.height = 500;
-                ctx.drawImage(image, 0, 0);
-                drawText();
+            ctx.drawImage(img, 0, 0);
+            ctx.font = "500 30px Montserrat";
+            ctx.textAlign = "left";
+            ctx.fillStyle = "grey";
+            ctx.shadowOffsetX = 0;
+            ctx.shadowOffsetY = 4;
+            ctx.shadowColor = "rgba(0, 0, 0, 1)";
+            ctx.fillText("Badge #:", 1288, 122);
+            ctx.font = "700 50px Montserrat";
+            ctx.textAlign = "left";
+            ctx.fillStyle = "white";
+            ctx.shadowOffsetX = 0;
+            ctx.shadowOffsetY = 4;
+            ctx.shadowColor = "rgba(0, 0, 0, 1)";
+            
+            if(index == 1){
+                ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
+		ctx.fillStyle = "gray";
             }
-        });
+            else if(index == 2){
+		ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
+		ctx.fillStyle = "gray";               
+            }
+            else if(index == 3){
+                ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
+		ctx.fillStyle = "gray";
+            }
+            else if(index == 4){
+                ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
+		ctx.fillStyle = "gray";
+            }
+            else if(index == 5){
+                ctx.fillText($('#inp').val().toUpperCase(), 400, 190);
+            }
+            else if(index == 6){
+                ctx.fillText($('#inp').val().toUpperCase(), 400, 190);
+            }
+             if(index != 0){
+                ctx.font = "500 30px Montserrat";
+                ctx.fillText($('#inp4').val().toUpperCase(), 1428, 122);
+                ctx.font = "500 30px Montserrat";
+		ctx.shadowColor = "rgba(0, 0, 0, 0)";
+                ctx.fillStyle = "#202020";
+                ctx.fillText($('#inp2').val().toUpperCase(), 501, 300);
+                ctx.font = "500 30px Montserrat";
+                           }
+        }
+        
+
+    window.onload = function(){
+        $('#inp').on('input', drawText);
+        $('#inp2').on('input', drawText);
+        $('#inp4').on('input', drawText);
+        var image = document.getElementById('canvasImg');
+        var canvas = document.getElementById('canvas');
+        ctx = canvas.getContext('2d');
+        image.onload = function(){
+            canvas.width = 1920;
+            canvas.crossOrigin = "Anonymous";
+            canvas.height = 500;
+//            ctx.clearRect(0,0,canvas.width,canvas.height);
+            ctx.drawImage(image, 0, 0);
+            drawText();
+        }
+    }
+
     </script>
 
 </body>
