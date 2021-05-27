@@ -153,6 +153,14 @@
             else if(temp == 'lt'){
                 img.src = "images/cdlieutenant.png";
                 index = 2;
+	    }		    
+            else if(temp == 'divisionchief'){
+                img.src = "images/divisionchief.png";
+                index = 3;
+	    }
+	    else if(temp == 'cdcommander'){
+                img.src = "images/cdcommander.png";
+                index = 4;
             }            
 
         }
@@ -191,8 +199,16 @@
             }
             else if(index == 2){
 		ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
-		ctx.fillStyle = "gray";               
+		ctx.fillStyle = "gray";   
             }
+	    else if(index == 3){
+		ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
+		ctx.fillStyle = "gray";    
+	    }
+	    else if(index == 4){
+		ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
+		ctx.fillStyle = "gray";    
+	    }
              if(index != 0){
                 ctx.font = "500 30px Montserrat";
                 ctx.fillText($('#inp4').val().toUpperCase(), 1428, 122);
