@@ -98,6 +98,12 @@
                         <li>
                             <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('BCD');">Correction's</button>
                         </li>
+			    <li>
+                            <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('SERT1');">Correction's</button>
+                        </li>
+			    <li>
+                            <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('CMT1');">Correction's</button>
+                        </li>
                         <li> 
                             <a href="header.html">Style 1</a>
                         </li>
@@ -138,14 +144,14 @@
         
 function changeImg(temp){
             var img = document.getElementById("canvasImg");
-            if(temp == "LSEMS")
-                img.src = "images/header.png";
+            if(temp == "CMT1")
+                img.src = "images/cmt1.png";
             else if(temp == "SD")
                 img.src = "images/header1.png";
        	      else if(temp == "BCD")
                 img.src = "images/header2.png";
-		else if(temp == "BCSD")
-                img.src = "images/header3.png";
+		else if(temp == "SERT1")
+                img.src = "images/sert1.png";
         }
             
         function drawText() {
