@@ -101,7 +101,10 @@
                         </li>
                         <li>
                             <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('SERT');">SERT</button>
-                        </li>                  			   
+                        </li>                  	
+			<li>
+                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('CMT');">CMT</button>
+                        </li>
                         <li> 
                             <a href="header2.html">Style 2</a>
                         </li>
@@ -144,8 +147,8 @@ function changeImg(temp){
             var img = document.getElementById("canvasImg");
             if(temp == "LSEMS")
                 img.src = "images/header.png";
-            else if(temp == "SD")
-                img.src = "images/header1.png";
+            else if(temp == "CMT")
+                img.src = "images/cmt.png";
        	      else if(temp == "SERT")
                 img.src = "images/sert.png";
 		else if(temp == "CD")
