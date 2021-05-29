@@ -105,6 +105,9 @@
 			<li>
                         <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('CMT');">CMT</button>
                         </li>
+			<li>
+                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('P&D');">P&D</button>
+                        </li>
                         <li> 
                             <a href="header2.html">Style 2</a>
                         </li>
@@ -152,6 +155,8 @@ function changeImg(temp){
                 img.src = "images/sert.png";
             else if(temp == "CMT")
                 img.src = "images/cmt.png";
+	    else if(temp == "P&D")
+                img.src = "images/Parole&Detention.png";
         }
         
         function drawText() {
