@@ -94,7 +94,10 @@
                     Choose From Here <span class="fa fa-caret-right"></span>
                     </button>
                     <ul class="dropdown-menu" style="background: black">
-                         <li>
+                        <li>
+                            <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('dc');">Division Chief</button>
+                        </li>
+			 <li>
                             <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('cl');">Colonel</button>
                         </li>
 			    <li>
@@ -160,8 +163,11 @@
 	    }
 	    else if(temp == 'lt'){
                 img.src = "images/lieutenant.png";
-                index = 4;
+                index = 4;		   
 	    }	    
+	    else if(temp == 'dc'){
+                img.src = "images/sddivisionchief.png";
+                index = 5;
         }
     </script>
     
@@ -209,7 +215,8 @@
 		ctx.fillStyle = "gray";
             }
             else if(index == 5){
-                ctx.fillText($('#inp').val().toUpperCase(), 400, 190);
+                ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
+		ctx.fillStyle = "gray";
             }
             else if(index == 6){
                 ctx.fillText($('#inp').val().toUpperCase(), 400, 190);
