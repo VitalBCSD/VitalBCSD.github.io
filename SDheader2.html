@@ -90,7 +90,7 @@
             </div>
             <div class="container">
                  <canvas id="canvas" class="canv"> </canvas>
-                <img  id="canvasImg" style="width: 1050px;height: 250px;" src="images/rtd1.png"  alt="">
+                <img  id="canvasImg" style="width: 1050px;height: 250px;" src="images/header1.png"  alt="">
             </div>
             <div class="container">
                 <div class="btn-group dropright chooser">
@@ -99,6 +99,9 @@
                     </button>
                     <ul class="dropdown-menu" style="background: black">                      
                         <li>
+                            <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('BCSD');">BCSD</button>
+                        </li>
+			    <li>
                             <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('RTD1');">RTD</button>
                         </li>
 			    <li>
@@ -154,6 +157,8 @@ function changeImg(temp){
                 img.src = "images/rtd1.png";
 	else if(temp == "ASD")
                 img.src = "images/asd1.png";
+	else if(temp == "BCSD")
+                img.src = "images/header1.png";
 	else if(temp == "CSU")
                 img.src = "images/csu1.png";
 	else if(temp == "PRD")
