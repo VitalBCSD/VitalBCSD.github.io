@@ -99,9 +99,6 @@
                     Choose From Here <span class="fa fa-caret-right"></span>
                     </button>
                     <ul class="dropdown-menu" style="background: black">
-                        <li>
-                            <button type="button" class="btn btn-warning" style="width: 100%;" onclick="changeImg('LSEMS');">BCSD</button>
-                        </li>
 			    <li>
                         <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('RTD');">RTD</button>
                         </li>
@@ -153,9 +150,7 @@
     <script type="text/javascript">   
 function changeImg(temp){
             var img = document.getElementById("canvasImg");
-            if(temp == "LSEMS")
-                img.src = "images/Parole&Detention.png";
-	else if(temp == "RTD")
+		if(temp == "RTD")
                 img.src = "images/rtd.png";
 	else if(temp == "ASD")
                 img.src = "images/asd.png";
