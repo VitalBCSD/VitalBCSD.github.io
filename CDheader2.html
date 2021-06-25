@@ -35,7 +35,7 @@
                 <h3>Blaine County Sheriff's Department</h3>
             </div>
 
-            <ul class="list-unstyled components">
+             <ul class="list-unstyled components">
                 <li class="active">
                     <a href="index.html">Home Page</a>
                 </li>
@@ -84,7 +84,7 @@
                         <li><button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
                             <i class="fas fa-align-left"></i>
                         </button></li>
-                        <li><h3>Correction's Header Generator</h3></li>
+                        <li><h3>Sheriff Header Generator</h3></li>
                     </ul>
                 </div>
             </nav>
@@ -99,7 +99,7 @@
                     Choose From Here <span class="fa fa-caret-right"></span>
                     </button>
                     <ul class="dropdown-menu" style="background: black">                      
-                        <li>
+                       <li>
                             <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('BCD');">Correction's</button>
                         </li>
 			    <li>
@@ -110,9 +110,9 @@
                         </li>
 			    <li>
                             <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('P&D');">P&D</button>
-                        </li>			   
+                        </li>				   
                         <li> 
-                            <a href="CDheader.html">Style 1</a>
+                            <a href="SDheader.html">Style 1</a>
                         </li>
                     </ul>
                 </div>
@@ -151,24 +151,16 @@
         
 function changeImg(temp){
             var img = document.getElementById("canvasImg");
-            if(temp == "CMT1")
+	if(temp == "CMT1")
                 img.src = "images/cmt1.png";
-            else if(temp == "SD")
+	else if(temp == "SD")
                 img.src = "images/header1.png";
-       	      else if(temp == "BCD")
+	else if(temp == "BCD")
                 img.src = "images/header2.png";
-		else if(temp == "SERT1")
+	else if(temp == "SERT1")
                 img.src = "images/sert1.png";
-	        else if(temp == "P&D")
+	else if(temp == "P&D")
                 img.src = "images/Parole&Detention1.png";
-	else if(temp == "RTD1")
-                img.src = "images/rtd1.png";
-	else if(temp == "ASD")
-                img.src = "images/asd1.png";
-	else if(temp == "CSU")
-                img.src = "images/csu1.png";
-	else if(temp == "PRD")
-                img.src = "images/prd1.png";
         }
             
         function drawText() {
