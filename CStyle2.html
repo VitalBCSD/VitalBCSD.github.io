@@ -166,14 +166,13 @@
         }
     </script>
     
-    <script type="text/javascript">
-        function drawText(){
+   function drawText(){
             var canvas = document.getElementById('canvas');
             ctx = canvas.getContext('2d');
             var img = document.getElementById("canvasImg");
-            canvas.width = 1900;
+            canvas.width = 1509;
             canvas.crossOrigin = "Anonymous";
-            canvas.height = 510;
+            canvas.height = 371;
 //            ctx.clearRect(0,0,canvas.width,canvas.height);
             ctx.font = "500 28px Montserrat";
             ctx.textAlign = "left";
@@ -185,7 +184,7 @@
             ctx.shadowOffsetX = 0;
             ctx.shadowOffsetY = 4;
             ctx.shadowColor = "rgba(0, 0, 0, 1)";
-            ctx.fillText("Badge #:", 1288, 122);
+            ctx.fillText("Badge #:", 1165, 135);
             ctx.font = "700 50px Montserrat";
             ctx.textAlign = "left";
             ctx.fillStyle = "white";
@@ -194,31 +193,44 @@
             ctx.shadowColor = "rgba(0, 0, 0, 1)";
             
             if(index == 1){
-                ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
+                ctx.fillText($('#inp').val().toUpperCase(), 305, 135);
 		ctx.fillStyle = "gray";
             }
             else if(index == 2){
-		ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
-		ctx.fillStyle = "gray";   
+		ctx.fillText($('#inp').val().toUpperCase(), 305, 135);
+		ctx.fillStyle = "gray";               
             }
-	    else if(index == 3){
-		ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
-		ctx.fillStyle = "gray";    
+            else if(index == 3){
+                ctx.fillText($('#inp').val().toUpperCase(), 305, 135);
+		ctx.fillStyle = "gray";
+            }
+            else if(index == 4){
+                ctx.fillText($('#inp').val().toUpperCase(), 305, 135);
+		ctx.fillStyle = "gray";
+            }
+            else if(index == 5){
+                ctx.fillText($('#inp').val().toUpperCase(), 305, 135);
+		ctx.fillStyle = "gray";
+            }
+            else if(index == 6){
+                ctx.fillText($('#inp').val().toUpperCase(), 305, 135);
+		ctx.fillStyle = "gray";
 	    }
-	    else if(index == 4){
-		ctx.fillText($('#inp').val().toUpperCase(), 501, 143);
-		ctx.fillStyle = "gray";    
-	    }
+            else if(index == 7){
+                ctx.fillText($('#inp').val().toUpperCase(), 305, 135);
+		ctx.fillStyle = "gray";
+            }
              if(index != 0){
                 ctx.font = "500 30px Montserrat";
-                ctx.fillText($('#inp4').val().toUpperCase(), 1428, 122);
+                ctx.fillText($('#inp4').val().toUpperCase(), 1308, 135);
                 ctx.font = "500 30px Montserrat";
 		ctx.shadowColor = "rgba(0, 0, 0, 0)";
                 ctx.fillStyle = "#202020";
-                ctx.fillText($('#inp2').val().toUpperCase(), 501, 300);
+                ctx.fillText($('#inp2').val().toUpperCase(), 305, 285);
                 ctx.font = "500 30px Montserrat";
                            }
         }
+        
 
     window.onload = function(){
         $('#inp').on('input', drawText);
@@ -231,6 +243,7 @@
             canvas.width = 1900;
             canvas.crossOrigin = "Anonymous";
             canvas.height = 400;
+//            ctx.clearRect(0,0,canvas.width,canvas.height);
             ctx.drawImage(image, 0, 0);
             drawText();
         }
