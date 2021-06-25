@@ -166,7 +166,9 @@
         }
     </script>
     
-   function drawText(){
+   <script type="text/javascript">
+        
+	 function drawText(){
             var canvas = document.getElementById('canvas');
             ctx = canvas.getContext('2d');
             var img = document.getElementById("canvasImg");
@@ -246,6 +248,8 @@
 //            ctx.clearRect(0,0,canvas.width,canvas.height);
             ctx.drawImage(image, 0, 0);
             drawText();
+        }
+    }
         }
     }
     </script>
