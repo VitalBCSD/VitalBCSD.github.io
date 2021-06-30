@@ -101,16 +101,16 @@
                     </button>
                     <ul class="dropdown-menu" style="background: black">
 			    <li>
-                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('TITLE');">RTD</button>
+                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('TITLE');">BCSD 1</button>
                         </li>
 			    <li>
-                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('TITLE1');">ASD</button>
+                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('TITLE1');">BCSD 2</button>
                         </li>
 			    <li>
-                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('CSU');">CSU</button>
+                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('title3');">BCSD 3</button>
                         </li>
 			    <li>
-                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('PRD');">PRD</button>
+                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('title 4');">BCSD 4</button>
                         </li>
                         <li> 
                             <a href="SDheader2.html">Style 2</a>
@@ -119,8 +119,6 @@
                 </div>
               <div class="container-fluid">
 
-                    
-		      
 		      <div class="form-group entry">
 			<label for="usr">Line 1:</label>
                         <input type="text" class="form-control" spellcheck="false" id="inp">
@@ -156,8 +154,14 @@
             var img = document.getElementById("canvasImg");
             if(temp == "TITLE")
                 img.src = "images/title.png";
-            if(temp == "TITLE1")
+            else if(temp == "TITLE1")
                 img.src = "images/title1.png";
+	     }
+	     else if(temp == "title3")
+                img.src = "images/title3.png";
+	     }
+	     else if(temp == "title4")
+                img.src = "images/title4.png";
 	     }
         
 	     function drawText() {
