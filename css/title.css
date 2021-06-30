@@ -222,7 +222,7 @@ a.article:hover {
 .entry{
     float: right;
     width: 60%;
-    margin: 0 auto;
+    margin: 12px;
 }
 .entry label{
     color: beige;
