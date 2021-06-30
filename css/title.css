@@ -221,7 +221,7 @@ a.article:hover {
 }
 .entry{
     float: right;
-    width: 100%;
+    width: 80 auto;
     margin: 12px;
 }
 .entry label{
