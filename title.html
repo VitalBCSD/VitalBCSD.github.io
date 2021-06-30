@@ -4,16 +4,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+	
 	<title>Vital BCSD</title>
 	<link rel="icon" href="images/favicon.png" type="image">
 	<link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/title.css">
+	<link rel="stylesheet" href="css/header2.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet"> 
-<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">	 
     <link rel="stylesheet" href="js/jquery.js">
     <link rel="stylesheet" media="screen" href="css/font.css" type="text/css"/>
     
@@ -29,7 +28,7 @@
 
 <body>
     <div class="wrapper">
-     <!-- Sidebar  -->
+         <!-- Sidebar  -->
         <nav id="sidebar" >
             <div class="sidebar-header">
                 <img src="images/lsems.png" style="width: 50px; height: 50px;" alt="">
@@ -41,7 +40,7 @@
                     <a href="index.html">Home Page</a>
                 </li>
                 <li>
-                    <a href="#homemenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Headers</a>
+                    <a href="#homemenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Signatures</a>
                      <ul class="collapse list-unstyled show" id="homemenu">
                         <li>
 			<a href="HC-sign.html">High Command</a>
@@ -77,13 +76,22 @@
                 
         </nav>
         <!-- Page Content  -->
-          </ul>
+        <div id="content">
+            <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                   <ul class="navUl">
+                        <li><button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="fas fa-align-left"></i>
+                        </button></li>
+                        <li><h3>Sheriff Header Generator</h3></li>
+                    </ul>
                 </div>
             </nav>
             </div>
             <div class="container">
                  <canvas id="canvas" class="canv"> </canvas>
-                <img  id="canvasImg" style="width: 1050px;height: 250px;" src="images/title.png"  alt="">
+                <img  id="canvasImg" style="width: 1050px;height: 250px;" src="images/header.png"  alt="">
             </div>
             
             <div class="container">
@@ -93,10 +101,16 @@
                     </button>
                     <ul class="dropdown-menu" style="background: black">
 			    <li>
-                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('TITLE1');">RTD</button>
-			    </li>
+                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('RTD');">RTD</button>
+                        </li>
 			    <li>
-                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('TITLE2');">PRD</button>
+                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('ASD');">ASD</button>
+                        </li>
+			    <li>
+                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('CSU');">CSU</button>
+                        </li>
+			    <li>
+                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('PRD');">PRD</button>
                         </li>
                         <li> 
                             <a href="SDheader2.html">Style 2</a>
@@ -108,6 +122,8 @@
                     <div class="form-group entry">
 			<label for="usr">Line 1:</label>
                         <input type="text" class="form-control" spellcheck="false" id="inp">
+			    <label for="usr">Line 2:</label>
+                        <input type="text" class="form-control" spellcheck="false" id="inp2">
 			    
                 </div>
             </div>
