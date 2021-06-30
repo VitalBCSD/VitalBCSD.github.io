@@ -77,42 +77,44 @@
                 
         </nav>
         <!-- Page Content  -->
-        <div id="content">
-            <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                   <ul class="navUl">
-                        <li><button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                            <i class="fas fa-align-left"></i>
-                        </button></li>
-                        <li><h3>Title Generator</h3></li>
-                    </ul>
-
+          </ul>
                 </div>
             </nav>
             </div>
-		<div class="col-md-2">
-                <div class="btn-group-vertical btn-group-lg bCenter">
-                    <button type="button" class="btn btn-primary" onclick="changeImg('TITLE');" >BCSD 1</button>
-                    <button type="button" class="btn btn-primary" onclick="changeImg('TITLE1');" >BCSD 2</button>
-           </div>
-		</div>
-		<div id="title" class="col-md-10">
-                <div class="container-fluid">
-                    <canvas id="canvas" class="canv"> </canvas>
-                    <img  id="canvasImg" style="width: 1150px; height: 63px;" src="images/title.png"  alt="">
-                </div>
+            <div class="container">
+                 <canvas id="canvas" class="canv"> </canvas>
+                <img  id="canvasImg" style="width: 1050px;height: 250px;" src="images/header.png"  alt="">
+            </div>
             
-            <div class="container-fluid">
-                
-                <div class="form-group entry">
-                    <label for="usr">Title:</label>
-                    <input type="text" class="form-control" spellcheck="false" id="inp">
+            <div class="container">
+                <div class="btn-group dropright chooser">
+                    <button class="btn btn-primary " type="button" data-toggle="dropdown">
+                    Choose From Here <span class="fa fa-caret-right"></span>
+                    </button>
+                    <ul class="dropdown-menu" style="background: black">
+			    <li>
+                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('TITLE1');">RTD</button>
+			    </li>
+			    <li>
+                        <button type="button" class="btn btn-warning" style="width: 100%;margin-top: 5px;" onclick="changeImg('TITLE2');">PRD</button>
+                        </li>
+                        <li> 
+                            <a href="SDheader2.html">Style 2</a>
+                        </li>
+                    </ul>
+                </div>
+              <div class="container-fluid">
+
+                    <div class="form-group entry">
+			<label for="usr">Line 1:</label>
+                        <input type="text" class="form-control" spellcheck="false" id="inp">
+			    
                 </div>
             </div>
-	</div>
+                
         </div>
     </div>
+
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
