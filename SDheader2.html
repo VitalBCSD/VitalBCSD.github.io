@@ -126,6 +126,8 @@
                         <input type="text" class="form-control" spellcheck="false" id="inp">
 			    <label for="usr">Line 2:</label>
                         <input type="text" class="form-control" spellcheck="false" id="inp2">
+			    <label for="usr">Line 3:</label>
+                        <input type="text" class="form-control" spellcheck="false" id="inp3">
 			    
                 </div>
             </div>
@@ -181,6 +183,8 @@ function changeImg(temp){
             ctx.fillText($('#inp').val().toUpperCase(), 31.5, 325);
             ctx.font = "600 35px Montserrat";
             ctx.fillText($('#inp2').val().toUpperCase(), 31.5, 365);
+	    ctx.font = "600 30px Montserrat";
+	    ctx.fillText($('#inp2').val().toUpperCase(), 31.5, 405);	
 	}
 
         $(document).ready(function(){
