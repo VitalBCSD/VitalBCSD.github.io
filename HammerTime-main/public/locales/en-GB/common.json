@@ -1,0 +1,42 @@
+{
+  "seoDescription": "Generate timestamp indicators for Discord chat messages",
+  "howTo": "Pick a date, copy the desired timestamp from the {{syntaxColName}} column, then paste it anywhere in a chat message. The result will be a dynamic timestamp that displays differently for everyone based on their own timezone.",
+  "input": {
+    "date": "Date and time",
+    "timezone": "Timezone"
+  },
+  "buttons": {
+    "copy": "Copy to clipboard",
+    "setCurrentTime": "Set to current time",
+    "lock": "Lock timestamp via URL",
+    "unlock": "Unlock timestamp"
+  },
+  "table": {
+    "syntax": "Chat syntax",
+    "example": "Example result"
+  },
+  "usefulLinks": {
+    "lead": "You may also find these useful:",
+    "server": {
+      "header": "Official HammerTime Server",
+      "p": "Discuss the website, test the syntax and suggest features"
+    },
+    "bot": {
+      "header": "HammerTime Bot <1>BETA</1>",
+      "p": "Generate timestamps with the <1>/timestamp</1> slash command"
+    },
+    "textColor": {
+      "header": "Rebane's <1>Coloured</1> Text Generator",
+      "p": "A simple app that creates coloured Discord messages using ANSI colour codes"
+    }
+  },
+  "changeLanguage": "Change language",
+  "notFound": {
+    "heading": "Not Found",
+    "content": "Nothing to see here."
+  },
+  "builtWith": "Website built with <1>Font Awesome Free</1>",
+  "openSource": "Open-source software",
+  "viewSource": "View source code",
+  "notAffiliated": "This project is not affiliated with Discord."
+}

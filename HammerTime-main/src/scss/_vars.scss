@@ -1,0 +1,28 @@
+$font-family-base: 'Montserrat', sans-serif;
+$font-family-monospace: 'Source Code Pro', 'Consolas', monospace;
+
+$discord: #5865f2;
+
+$code-color: #c1c2c5;
+$code-bg: #373a40;
+$code-border: 0;
+
+$link-color: rgb(116, 143, 252);
+$body-color: #dcddde;
+$body-bg: #1a1b1e;
+$card-border-width: 0;
+$card-bg: $body-bg;
+$card-color: $body-color;
+$btn-close-color: $body-color;
+
+$input-bg: $code-bg;
+$input-disabled-bg: darken($code-bg, 3%);
+$input-border-color: $input-bg;
+$input-color: $body-color;
+$input-group-addon-bg: $input-bg;
+$input-group-addon-border-color: $input-group-addon-bg;
+
+$custom-colors: (
+  discord: $discord,
+  body: $body-bg,
+);
